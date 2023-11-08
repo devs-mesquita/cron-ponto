@@ -1,4 +1,9 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
+import cron from "node-cron";
+import nodemailer from "nodemailer";
+
 dotenv.config();
 
-console.log(process.env.TESTING);
+const transporter = nodemailer.createTransport({
+  
+});
